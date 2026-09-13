@@ -1,0 +1,26 @@
+.button {
+  min-height: 48px;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  color: #071027;
+  background: linear-gradient(180deg, #9bb0ff 0%, var(--accent) 100%);
+  box-shadow: 0 10px 28px rgba(80, 108, 213, 0.22);
+  font-weight: 700;
+  transition: background 160ms ease, transform 160ms ease, box-shadow 160ms ease;
+}
+
+.button:hover {
+  background: linear-gradient(180deg, #a9bbff 0%, #91a9ff 100%);
+  box-shadow: 0 14px 34px rgba(80, 108, 213, 0.3);
+  transform: translateY(-1px);
+}
+
+.button:active {
+  transform: translateY(0);
+}
+
+.button:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 3px;
+}
